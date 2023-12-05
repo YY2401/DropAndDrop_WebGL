@@ -90,7 +90,7 @@
         // config.devicePixelRatio = 1;
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } 
+      }
 
       loadingBar.style.display = "block";
 
@@ -109,28 +109,6 @@
         });
       };
       document.body.appendChild(script);
-
-      var unityContainer = document.getElementById('unity-container');
-      function unityContainerReSize(){
-        var w = window.innerWidth || document.body.clientWidth,
-        h = window.innerHeight || document.body.clientHeight,
-        ratio = 16 / 9,
-        r = w / h,
-        setW,setH,setTop,setLeft;
-        if(r >= ratio){
-          setW = h * ratio;
-          setLeft = (w - setW) / 2;
-        }else{
-          setH = w / ratio;
-          setTop = (h - setH) / 2;
-        }
-        unityContainer.style.width = (setW || w) + 'px';
-        unityContainer.style.height = (setH || h) + 'px';
-        unityContainer.style.top = (setTop || 0) + 'px';
-        unityContainer.style.left = (setLeft || 0) + 'px';
-      }
-      window.addEventListener('resize',unityContainerReSize)
-      unityContainerReSize();
     </script>
   </body>
 </html>
