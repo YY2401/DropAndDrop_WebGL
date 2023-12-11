@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=100% height=100%></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TemplateData.loader.js";
+      var loaderUrl = buildUrl + "/OldVersion.loader.js";
       var config = {
-        dataUrl: buildUrl + "/TemplateData.data.unityweb",
-        frameworkUrl: buildUrl + "/TemplateData.framework.js.unityweb",
-        codeUrl: buildUrl + "/TemplateData.wasm.unityweb",
+        dataUrl: buildUrl + "/OldVersion.data.unityweb",
+        frameworkUrl: buildUrl + "/OldVersion.framework.js.unityweb",
+        codeUrl: buildUrl + "/OldVersion.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "DropAndDrop",
