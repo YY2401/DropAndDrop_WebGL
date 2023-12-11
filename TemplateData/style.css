@@ -2,6 +2,7 @@ body { padding: 0; margin: 0 }
 #unity-container { position: absolute }
 @media screen and (orientation: portrait) {
     #portrait-mask{
+        position: relative;
         height: 100%;
         width: 100%;
         margin: 0;
@@ -12,6 +13,7 @@ body { padding: 0; margin: 0 }
         z-index: 2;
     }
     #unity-container{
+        position: relative;
         z-index: 1;
         margin: -300px;
     }
