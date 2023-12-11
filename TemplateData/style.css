@@ -3,12 +3,11 @@ body { padding: 0; margin: 0 }
 @media screen and (orientation: portrait) {
     #portrait-mask{
         position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0;
+        height: 100vh;
+        width: 100vw;
         background-color: black;
-        font-size: 60px;
-        color: aliceblue;
+        font-size: 40px;
+        color: white;
         display: block;
         z-index: 2;
     }
@@ -21,10 +20,6 @@ body { padding: 0; margin: 0 }
 @media screen and (orientation: landscape) {
     #portrait-mask{
         display: none;
-    }
-    #unity-container{
-        z-index: 1;
-        margin: 0;
     }
 }
 #unity-canvas { background: #231F20 }
