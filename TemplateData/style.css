@@ -1,14 +1,7 @@
 body { padding: 0; margin: 0 }
 #unity-container { position: absolute }
 @media screen and (orientation: portrait) {
-    html{
-        width: 100vmin;
-        height: 100vmax;
-    }
-    body{
-        width: 100vmin;
-        height: 100vmax;
-    }
+    
     #unity-container{
         width: 100vh;
         height: 100vw;
