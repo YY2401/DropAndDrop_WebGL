@@ -21,6 +21,9 @@ body { padding: 0; margin: 0 }
     #portrait-mask{
         display: none;
     }
+    #unity-container{
+        margin: 0;
+    }
 }
 #unity-canvas { background: #231F20 }
 .unity-mobile #unity-canvas { width: 90vw; height: 90vh }
