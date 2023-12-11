@@ -7,6 +7,9 @@ body { padding: 0; margin: 0 }
         margin: 0;
         background-color: black;
         font-size: 60px;
+        color: aliceblue;
+        display: flex;
+        z-index: 2;
     }
 }
 @media screen and (orientation: landscape) {
