@@ -12,8 +12,8 @@ body { padding: 0; margin: 0 }
     #unity-container{
         width: 100vmax;
         height: 100vmin;
-        transform-origin: top left;
-        transform: rotate(90deg)translate(0,-100vmin);
+        transform-origin: center;
+        transform: rotate(90deg);
     }
 }
 @media screen and (orientation: landscape) {
