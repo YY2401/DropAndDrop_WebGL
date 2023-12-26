@@ -26,7 +26,8 @@
     <div id="unity-build-title">DropAndDrop</div>
   </div>
 </div>
-    <script>
+
+<script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -61,9 +62,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Webtest.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Webtest.data.unityweb",
-        frameworkUrl: buildUrl + "/Webtest.framework.js.unityweb",
-        codeUrl: buildUrl + "/Webtest.wasm.unityweb",
+        dataUrl: buildUrl + "/Webtest.data",
+        frameworkUrl: buildUrl + "/Webtest.framework.js",
+        codeUrl: buildUrl + "/Webtest.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "DropAndDrop",
