@@ -58,27 +58,20 @@
         }
         updateBannerVisibility();
       }
-      
-      
+
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Webtest.loader.js";
+      var loaderUrl = buildUrl + "/WebTest.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Webtest.data",
-        frameworkUrl: buildUrl + "/Webtest.framework.js",
-        codeUrl: buildUrl + "/Webtest.wasm",
+        dataUrl: buildUrl + "/WebTest.data",
+        frameworkUrl: buildUrl + "/WebTest.framework.js",
+        codeUrl: buildUrl + "/WebTest.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "DropAndDrop",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
-      var elem = document.getElementById("unity-container");
-      
-      function openFullScreen(){
-        if(elem.requestFullscreen){
-          elem.requestFullscreen();
-        }
-      }
+
       // By default Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
       // Set this to false if you want to decouple this synchronization from
