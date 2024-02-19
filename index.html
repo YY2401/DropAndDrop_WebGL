@@ -33,6 +33,29 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
+      
+      function unityContainerResize(){
+        var w = window.innerWidth || document.body.clientWidth,
+                h = window.innerHeight || document.body.clientHeight,
+                ratio = 16 / 9,
+                r = w/h;
+        var setW,setH,setTop,setLeft;
+        if(r >= ratio){
+          setW = h * ratio;
+          setLeft = (w - setW) / 2;
+        }
+        else {
+          setH = w / ratio;
+          setTop = (h - setH) / 2;
+        }
+        container.style.width = (setW || w) + 'px';
+        container.style.height = (setH || h) + 'px';
+        container.style.top = (setTop || 0) + 'px';
+        container.style.left = (setLeft || 0) + 'px';
+
+      }
+      window.addEventListener('resize',unityContainerResize)
+      unityContainerResize();
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
